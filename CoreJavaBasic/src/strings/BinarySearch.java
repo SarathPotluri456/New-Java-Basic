@@ -7,10 +7,7 @@ public class BinarySearch {
 		
 		int lowindex=0;
 		int highindex=arr.length-1;
-		/*if(lowindex>highindex)
-		{
-		System.out.println("Key not found");
-		}*/
+		
 		while(lowindex<=highindex)
 		{
 			
@@ -27,7 +24,7 @@ public class BinarySearch {
 			else
 			{
 				
-				System.out.println("Founded Index found value is:"+mid);
+				System.out.println("Index found value is:"+mid);
 				break;
 			}
 			
@@ -46,9 +43,9 @@ public class BinarySearch {
 	public static void main(String[] args)
 	{
 		BinarySearch bs=new BinarySearch();
-		int arr[]= {10,20,30,40,50,60};
+		int arr[]= {1,2,3,4,5,6};
 	
-		 int key=70;
+		 int key=4;
 		bs.binerySearch(arr,key);
 
 	}
