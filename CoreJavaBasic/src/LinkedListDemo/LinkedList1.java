@@ -12,10 +12,12 @@ public class LinkedList1 {
 
 	public static void main(String[] args) {
 		LinkedList<String> l1=new LinkedList<String>();
+		
 		List<String>l2=new LinkedList<String>();
 		ArrayList a1=new ArrayList();
 		a1.add(234);
 		a1.add("fsfdedf");
+		a1.clear();
 		System.out.println(a1);
 		l2.add("New");
 		l2.add("List");
@@ -23,6 +25,13 @@ public class LinkedList1 {
 		l1.add("Potluri");
 		l1.add("Hai");
 		l1.add("how");
+		LinkedList<String> l3=l1;
+		System.out.println("Assigning l1 to l3"+l3);
+		System.out.println("for loop");
+		 for(int i=0;i<l1.size();i++)
+		  {
+			  System.out.println(l1.get(i));
+		  }
 		System.out.println(l1);
 		l1.addFirst("Are");
 		l1.addLast("PSB");
@@ -57,7 +66,9 @@ public class LinkedList1 {
 		{
 			System.out.println(li.previous());
 		}
-		
+		l1.clear();
+		System.out.println("After doing Clear Statement ");
+		System.out.println(l1);
 		
 		
 
