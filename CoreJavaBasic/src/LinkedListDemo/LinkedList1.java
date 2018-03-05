@@ -1,8 +1,12 @@
 package LinkedListDemo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
+
+
 
 public class LinkedList1 {
 
@@ -33,6 +37,28 @@ public class LinkedList1 {
 		System.out.println("After Removing one element");
 		System.out.println(l1);
 		System.out.println("The Size of Linked List:"+l1.size());
+		l1.removeFirst();
+		System.out.println("After Removing First Element"+l1);
+		l1.removeLast();
+		System.out.println("After Removing Last Element"+l1);
+		Iterator<String> i1=l1.iterator();
+		while(i1.hasNext())
+		{
+			System.out.println(i1.next());
+		}
+		ListIterator<String> li=l1.listIterator();
+		System.out.println("While Using Next ListIterator");
+		while(li.hasNext())
+		{
+			System.out.println(li.next());
+		}
+		System.out.println("While Using Previous ListIterator");
+		while(li.hasPrevious())
+		{
+			System.out.println(li.previous());
+		}
+		
+		
 		
 
 	}
