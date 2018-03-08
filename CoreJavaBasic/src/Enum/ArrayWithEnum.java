@@ -1,6 +1,7 @@
 package Enum;
 
-/*import java.util.ArrayList;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Enumeration;
 
 public class ArrayWithEnum {
@@ -12,9 +13,13 @@ public class ArrayWithEnum {
 		al.add("hai");
 		al.add("how");
 		al.add("are");
-		Enumeration e=al.el
+		Enumeration e=Collections.enumeration(al);
+		while(e.hasMoreElements())
+		{
+			System.out.println(e.nextElement());
+		}
 		
 
 	}
 
-}*/
+}
