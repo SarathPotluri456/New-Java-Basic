@@ -18,8 +18,8 @@ public class ArrayWithEnum {
 		{
 			System.out.println(e.nextElement());
 		}
+	
 		
-
 	}
 
 }
