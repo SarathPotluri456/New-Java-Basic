@@ -18,6 +18,7 @@ public class Client {
 		ts.add(new Customer(11,"sarath",50));
 		ts.add(new Customer(10,"sathish",30));
 		ts.add(new Customer(15,"potluri",35));
+	
 		System.out.println(ts);
 		/*Collections.sort(ts);
 		Iterator itr=ts.iterator();
