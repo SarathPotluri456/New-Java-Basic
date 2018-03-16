@@ -13,13 +13,13 @@ public class ClientCheck {
 		ts.add(new Employee("suresh","naik",5442342234L,20,"current"));
 		ts.add(new Employee("mahesh","babu",5442362234L,20,"current"));
 		
-		System.out.println(ts);
+		/*System.out.println(ts);
 		Iterator itr=ts.iterator();
 		while(itr.hasNext())
 		{
 			System.out.println(itr.next());
-		}
-		
+		}*/
+		System.out.println(ts.headSet(new Employee("suresh","naik",5442342234L,20,"current")));
 
 	}
 
