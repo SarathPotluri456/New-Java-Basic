@@ -1,5 +1,7 @@
 package NavigableMapSortedMap;
 
+import java.util.Iterator;
+import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.Set;
 import java.util.SortedMap;
@@ -15,6 +17,19 @@ public class NavigableMapdemo {
 		nm.put(65,"ffjfijf");
 		nm.put(76,"fokfoff");
 		System.out.println(nm);
+		System.out.println();
+		System.out.println("With Entry Set:");
+		System.out.println();
+		Set s=nm.entrySet();
+		Iterator it=s.iterator();
+		while(it.hasNext())
+		{
+			Entry en=(Entry) it.next();
+			System.out.println(en.getKey()+" "+en.getValue());
+		}
+		System.out.println();
+		System.out.println("With Advanced for Loop");
+		System.out.println();
 		Set t=nm.keySet();
 		for(Object key:t)
 		{
