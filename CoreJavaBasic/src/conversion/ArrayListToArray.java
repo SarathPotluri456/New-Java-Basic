@@ -11,6 +11,7 @@ public class ArrayListToArray {
 		al.add("how");
 		al.add("are");
 		al.add("you");
+		
 		String[] arr=new String[al.size()];
 		arr=(String[]) al.toArray(arr);
 		for(int i=0;i<arr.length;i++)
